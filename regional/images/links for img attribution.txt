@@ -1,0 +1,18 @@
+**make sure to update from file on GA laptop**
+
+--MAPS--
+Samoa: https://commons.wikimedia.org/wiki/File:Samoa_map_800px.png
+
+Australia: https://commons.wikimedia.org/wiki/File:Australia_map.png
+
+New Zealand: https://commons.wikimedia.org/wiki/File:New_Zealand_map.PNG
+
+--HEADERS--
+Academic Policies: Christopher John Kessenich
+
+Action Items: Sloane Chmara
+
+South Pacific: Alexandra Thompson
+
+--IMAGES--
+New Zealand Whangaparosa peninsula: Shane Stever
