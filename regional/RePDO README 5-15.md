@@ -1,9 +1,6 @@
 # Regional Predeparture Orientation
 >A guide for editing and expanding GEO's RePDO
 
-A brief description of your project, what it is used for and how does life get 
-awesome when someone starts to use it.
-
 ## Getting started
 This project was created with [Twine](https://twinery.org/) in the format [Sugarcube 2.28.2](http://www.motoslave.net/sugarcube/2/#documentation). 
 To edit or add content to this project, [download Twine](https://twinery.org/).
@@ -21,7 +18,7 @@ The RePDO story consists of three main sections:
 * Behind the Scenes (BTS) content (i.e. widgets, special passages)
 
 These sections are visually separated on the Twine story and marked with a blue-
-tagged label. 
+[tagged](#tagged-passages) `label`. 
 
 ### General Content
 The content in these passages is the same for all students, regardless of the region of the 
@@ -43,10 +40,63 @@ Pacific, the title should be `Dietary Preferences The South Pacific`, because th
 corresponding General Content passage is titled `Dietary Preferences` and the [region
 name](#region-names) is `The South Pacific`.
 
+These passages do not require any navigational buttons, only header images and content. 
+All navigation through the module is built into the General Content passages.
 
+### Behind the Scenes (BTS) Content
+These passages contain information and codes that help the module function. 
 
+#### _Widgets_
+Some BTS passages contain "Widget" in the title and are [tagged](#tagged-passages) `widget` in purple. 
+These passages create simplified and user-friendly operations out of commonly used code. 
+
+For example, the `Quiz Question Widget` formats true/false quiz questions 
+automatically, foregoing the need to replicate the same coding for each Quiz passage.
+
+Without the widget, someone creating a quiz question would type each time:
+```shell
+<<nobr>><div class="sectionheader" id="quiz">Quiz</div>
+<<set $passage = passage()>>
+<<script>>
+var passageName = variables().passage;
+var answerPass = passageName + " Answer";
+variables().ansPsg = answerPass;
+variables().question = variables().args[0];
+<</script>><</nobr>><<set $answer = "blank">>\
+<table><tr>\
+<td><<print $question>></td>
+<td><<radiobutton "$answer" "true">>True</td>
+<td><<radiobutton "$answer" "false">>False</td>
+</tr></table><span id="wait"></span>
+<<repeat 1s>><<if $answer isnot "blank">><<replace "#wait">>
+<</replace>><<removeclass "#next-button" "hidden">><</if>><</repeat>>
+<button id="next-button" class="link-internal macro-button hidden" \
+data-passage=$ansPsg>Check Answer</button>
+```
+However, by utilizing Twine's ability to [save this code as a widget](https://www.motoslave.net/sugarcube/2/docs/#macros-macro-widget), someone creating a 
+quiz question only has to type into a blank passage:
+```shell
+<<question "Text of the question goes here">>
+```
+All widget passages begin with notes (text surrounded by `/* --- */`) explaining their
+function and use. 
+
+#### _Special Passages_
+Other special passages are not widgets, but they similarly function in a "behind-the-scenes" 
+manner. These passages are visually next to the Widget passages and are [tagged](#tagged-passages) `special` 
+in gold. _Some of these passages may appear superfluous but are necessary to the 
+functioning of some widgets and general content navigation._
+
+Two of these passages in particular, named according to Twine's [naming conventions](https://www.motoslave.net/sugarcube/2/docs/#special-names), 
+should be noted:
+| Passage Name | Components |
+| ------ | ------ |
+| `PassageFooter` | gray bar that runs across the bottom of the module |
+| `StoryCaption` | "contact my advisor" bar (quiz answer); print icon; Bookmarks button |
+
+## Tagged Passages
 # Sections I need to include:
-### Widgets
+
 ## Naming Conventions
 ### Region Names
 
