@@ -4,8 +4,8 @@
 This document is intended to help you understand the existing layout and components of the RePDO, as well as [make edits and add content](#editing-the-repdo) of your own.
 
 *You may be interested in...*
-__Editing the RePDO__: [Adding a New Region](#adding-a-new-region); (more coming)
-__Helpful Tips__: [Quick Find](#quick-find); (more coming)
+* __Editing the RePDO__: [Adding a New Region](#adding-a-new-region); (more coming)
+* __Helpful Tips__: [Quick Find](#quick-find); (more coming)
 
 ## Getting started
 This project was created with [Twine](https://twinery.org/) in the format [Sugarcube 2.28.2](http://www.motoslave.net/sugarcube/2/#documentation). To edit or add content to this project, [download Twine](https://twinery.org/).
