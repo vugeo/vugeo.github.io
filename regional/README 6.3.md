@@ -227,11 +227,13 @@ If the region-specific content passages are [named correctly](#region-specific-c
 ## Helpful Tips
 ### Quick Find
 ![alt text][highlight]
+
 The Quick Find tool allows you to search for words or phrases throughout the entire RePDO project. Passages that contain the text typed into the search bar will be highlighted in yellow.
 
 Along with simply searching for words or phrases, clicking on the icon to the right of the Quick Find bar (![alt text][frIcon]) will allow you to find all instances of a word or phrase in the RePDO project and replace them with other text. 
 
 ![alt text][findreplace]
+
 Using this tool is recommended when changing names or variables that are used multiple times throughout the RePDO project. 
 
 [highlight]: https://vugeo.github.io/regional/images/screenshots/highlights.png "Highlighted Passages"
