@@ -148,6 +148,7 @@ Regarding the [Region-Specific Content](#region-specific-content) passage titles
 Each region has a region code, saved as the `$regCode` variable and set by it's Region Intro passage. These codes must be equivalent to the custom HTML classes that appear on the GEO website's [Advising page](https://www.vanderbilt.edu/geo/advising/). The `<<showadvisors>>` widget uses this variable to display all of the advisors from a particular region when a student clicks "Contact your GEO Advisor" on a quiz answer passage. 
 
 The region codes are as follows: 
+
 | Region Code | Region |
 | ------ | ------ |
 | `ame` | Africa and the Middle East |
