@@ -4,7 +4,9 @@
 This document is intended to help you understand the existing layout and components of the RePDO, as well as [make edits and add content](#editing-the-repdo) of your own.
 
 *You may be interested in...*
+
 __Editing the RePDO__: [Adding a New Region](#adding-a-new-region); (more coming)
+
 __Helpful Tips__: [Quick Find](#quick-find); (more coming)
 
 ## Getting started
