@@ -73,6 +73,7 @@ However, by utilizing Twine's ability to [save this code as a widget](https://ww
 ```
 
 Below is a list of  custom widgets, their corresponding passage, and a brief description of their function. All widget passages begin with comments (text surrounded by `/* ... */`) explaining in more depth their function and use.
+
 | Widget | Corresponding passage | What it does |
 | ------ | ------ | ------ |
 | `<<action>>` | Action Item Widget | creates checklist items on `Action Items` passage |
