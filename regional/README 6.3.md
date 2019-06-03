@@ -91,6 +91,7 @@ Below is a list of  custom widgets, their corresponding passage, and a brief des
 Other special passages are not widgets, but they similarly function in a "behind-the-scenes" manner. These passages are organized next to the Widget passages and are [tagged](#tagged-passages) `special` in gold. _Some of these passages may appear superfluous but are necessary to the functioning of widgets and general content navigation._
 
 Two of these passages in particular, named according to Twine's [naming conventions](https://www.motoslave.net/sugarcube/2/docs/#special-names), should be noted:
+
 | Passage Name | Components it controls |
 | ------ | ------ |
 | `PassageFooter` | gray bar that runs across the bottom of the module |
