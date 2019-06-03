@@ -1,7 +1,12 @@
-# Regional Predeparture Orientation
+﻿# Regional Predeparture Orientation
 >A guide for editing and expanding GEO's RePDO
 
 This document is intended to help you understand the existing layout and components of the RePDO, as well as [make edits and add content](#editing-the-repdo) of your own.
+
+*You may be interested in...*
+__Editing the RePDO__: [Adding a New Region](#adding-a-new-region); (more coming)
+__Helpful Tips__: [Quick Find](#quick-find); (more coming)
+
 ## Getting started
 This project was created with [Twine](https://twinery.org/) in the format [Sugarcube 2.28.2](http://www.motoslave.net/sugarcube/2/#documentation). To edit or add content to this project, [download Twine](https://twinery.org/).
 
@@ -201,23 +206,44 @@ Each action item has a corresponding variable. When students indicate whether or
 | `$actionVIRT`| `true`; `false` | set by buttons on `Save VIRT Contact Info` passage; evaluated by `Action Items` passage |
 
 
-----
 ## Editing the RePDO
-🚩 If you alter variables, names, etc. within the RePDO, please [edit this README](https://dillinger.io/) to reflect those changes.
+🚩 If you alter variables, names, etc. within the RePDO, please [edit this README](#links) to reflect those changes.
+
+The following sections provide instructions for making common edits/additions to the RePDO. Understanding the above information will be very helpful in completing these tasks. Such information is linked below when applicable.
+
+### Adding a New Region
+To add a new region to the RePDO, 
+1. Create new passages by clicking the green "+ Passage" button in the bottom right-hand corner. 
+2. Add a blue `label` tag to one passage and title it with the [region name](#region-names), visually distinguishing the new region's content passages within the Twine story editor.
+3. Title the content passages by copying the passage titles from another region. (More information on [naming region-specific content passages](#region-specific-content))
+4. Add the regional content to the passage, being sure to follow the same format as the content in other regions. 
+
+If the region-specific content passages are [named correctly](#region-specific-content), it will not be necessary to do anything further than this. The regional content should auto-populate the necessary [general content](#general-content) passages.
+
+
 ## Helpful Tips
 ### Quick Find
+![alt text][highlight]
+The Quick Find tool allows you to search for words or phrases throughout the entire RePDO project. Passages that contain the text typed into the search bar will be highlighted in yellow.
 
+Along with simply searching for words or phrases, clicking on the icon to the right of the Quick Find bar (![alt text][frIcon]) will allow you to find all instances of a word or phrase in the RePDO project and replace them with other text. 
 
+![alt text][findreplace]
+Using this tool is recommended when changing names or variables that are used multiple times throughout the RePDO project. 
+
+[highlight]: https://vugeo.github.io/regional/images/screenshots/highlights.png "Highlighted Passages"
+[findreplace]: https://vugeo.github.io/regional/images/screenshots/find-and-replace.png "Find and Replace"
+[frIcon]: https://vugeo.github.io/regional/images/screenshots/frIcon.png "Find and Replace Icon"
 
 ## Links
-
-
 
 - Project file (Box): https://vanderbilt.app.box.com/file/456834542469
 - Repository: https://github.com/vugeo/vugeo.github.io/tree/master/regional
 - Twine 2
     - Download: https://twinery.org/
     - Online Editor: https://twinery.org/2/#!/stories
+- Markdown Editors (for editing README)
+	- Dillinger: https://dillinger.io/
+	- Stackedit: https://stackedit.io/app#
 
-
-*Updated 5/20/2019*
+*Updated 6/3/2019*
