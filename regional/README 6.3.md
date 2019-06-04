@@ -251,6 +251,6 @@ Using this tool is recommended when changing names or variables that are used mu
 	- Dillinger: https://dillinger.io/
 	- Stackedit: https://stackedit.io/app#
 
-*README markdown can also be edited in GitHub if logged in.
+*README markdown can also be edited directly in GitHub if logged in.
 
 *Updated 6/3/2019*
