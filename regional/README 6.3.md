@@ -247,8 +247,10 @@ Using this tool is recommended when changing names or variables that are used mu
 - Twine 2
     - Download: https://twinery.org/
     - Online Editor: https://twinery.org/2/#!/stories
-- Markdown Editors (for editing README)
+- Markdown Editors with Live Preview (for editing README*)
 	- Dillinger: https://dillinger.io/
 	- Stackedit: https://stackedit.io/app#
+
+*README markdown can also be edited in GitHub if logged in.
 
 *Updated 6/3/2019*
