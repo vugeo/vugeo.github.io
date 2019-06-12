@@ -190,7 +190,7 @@ The following list shows and explains some key variables that currently exist in
 | `$region`| see [Region Names](#region-names) | set by student input: select region on map ___or___ `<<undefined>>` widget; displays region name |
 | `$regCode` | see [Region Codes](#region-codes)| set by Region Intro passage; evaluated by `<<showadvisors>>` widget; must match HTML class of advisor profile on GEO website|
 | `$country`| see [Country Names](#country-names) | set by Country Intro passage ___or___ by student input: `<<undefined>>` widget |
-| `$complete`| `yes` | shows that student has completed entire module; set by `End Portal` passage; evaluated by action item passages |
+| `$complete`| `yes`; null | shows that student has completed entire module; set by `End Portal` passage; evaluated by action item passages |
 
 ### Completed Content Sections
 At the end of each set of quiz passages, there is a variable that indicates that the student has completed that quiz. If they navigate back to that quiz later, there will be an option for them to skip it. Below are two examples of these variables.
@@ -247,8 +247,10 @@ Using this tool is recommended when changing names or variables that are used mu
 - Twine 2
     - Download: https://twinery.org/
     - Online Editor: https://twinery.org/2/#!/stories
-- Markdown Editors (for editing README)
+- Markdown Editors with Live Preview (for editing README*)
 	- Dillinger: https://dillinger.io/
 	- Stackedit: https://stackedit.io/app#
+
+*README markdown can also be edited directly in GitHub if logged in.
 
 *Updated 6/3/2019*
