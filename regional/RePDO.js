@@ -278,8 +278,3 @@ Macro.add("actionitem", {
 })(jQuery);
 
 }).call(window, window);
-
-
-
-
-
