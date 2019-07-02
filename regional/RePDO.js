@@ -14,6 +14,7 @@ GE.setRegion = function(rName) {
 	State.variables.region = rName;
 };
 
+
 //Enable scroll-triggered animations on elements, except on the Action Items list page
 $(document).on(':passagedisplay', function(ev) {
 	if (ev.passage.title != "Action Items") {
@@ -278,3 +279,18 @@ Macro.add("actionitem", {
 })(jQuery);
 
 }).call(window, window);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
