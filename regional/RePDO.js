@@ -14,6 +14,16 @@ GE.setRegion = function(rName) {
 	State.variables.region = rName;
 };
 
+$(document).on(':passagedisplay', function(ev) {
+	if ( State.length < 2 ) {
+	$( ".backButton" ).addClass( "disabled" );
+		};
+if (State.length === State.size) {
+	$( ".forwardButton" ).addClass( "disabled" );
+		};
+});
+
+
 
 //Enable scroll-triggered animations on elements, except on the Action Items list page
 $(document).on(':passagedisplay', function(ev) {
