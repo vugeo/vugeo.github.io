@@ -1399,6 +1399,7 @@ animation: none !important;
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">config.saves.autosave = true;
 config.saves.autoload = "prompt";
 Config.cleanupWikifierOutput = true;
@@ -1707,6 +1708,7 @@ Macro.add("actionitem", {
 
 
 
+
 </script><tw-tag name="action" color="red"></tw-tag>,<tw-tag name="action-listing" color="red"></tw-tag>,<tw-tag name="country" color="orange"></tw-tag>,<tw-tag name="delete-when-done" color="green"></tw-tag>,<tw-tag name="donotdelete" color="yellow"></tw-tag>,<tw-tag name="label" color="blue"></tw-tag>,<tw-tag name="quiz" color="green"></tw-tag>,<tw-tag name="readme" color="blue"></tw-tag>,<tw-tag name="resources" color="purple"></tw-tag>,<tw-tag name="special" color="yellow"></tw-tag>,<tw-tag name="widget" color="purple"></tw-tag><tw-passagedata pid="1" name="Regional Pre-Departure Orientation" tags="first no-transition" position="284,22" size="100,100">&lt;&lt;logoheader&gt;&gt;
 
 &lt;div style=&quot;text-align:center;&quot;&gt;&lt;&lt;timed 1s t8n&gt;&gt;&lt;h1&gt;Welcome &lt;span style=&quot;display: inline-block;&quot;&gt;to your&lt;/span&gt; &lt;span style=&quot;display: inline-block;&quot;&gt;Pre-Departure Orientation&lt;/span&gt;&lt;/h1&gt; &lt;&lt;next&gt;&gt;&lt;span id=&quot;intro&quot;&gt;We are excited that you are choosing a study abroad experience. The Regional Pre-Departure Orientation is delivered in two parts: &#39;&#39;an online module &#39;&#39;that provides essential information for your semester abroad, and &#39;&#39;an in-person meeting&#39;&#39; where you will have the opportunity to reflect on the values and skills you can gain during your study abroad experience.
@@ -1754,7 +1756,7 @@ OK, so what do these academic policies actually mean for your time abroad? Let&#
 *Make sure to drop any courses you don’t want to take during your program’s official drop/add period. 
 
 &lt;&lt;button[[Check Your Knowledge|Intro to Quizzes]]&gt;&gt;&lt;&lt;/button&gt;&gt;
-&lt;&lt;set $sidebar = &quot;blank&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Academic Policies Quiz 1a" tags="quiz" position="273.6666666666667,641.6666666666666" size="100,100">&lt;&lt;question &quot;You earned a C in ECON 2100 at Vanderbilt. One of the courses on your abroad program is equivalent to ECON 2100, so you can take that and improve your grade.&quot;&gt;&gt;\
+&lt;&lt;set $sidebar = &quot;blank&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="5" name="Academic Policies Quiz 1a" tags="quiz" position="273,641" size="100,100">&lt;&lt;question &quot;You earned a C in ECON 2100 at Vanderbilt. One of the courses on your abroad program is equivalent to ECON 2100, so you can take that and improve your grade.&quot;&gt;&gt;\
 \
 &lt;&lt;if $Academic1 is &quot;complete&quot;&gt;&gt;\
 &lt;&lt;sidebar&gt;&gt;You have already completed this section of questions! Click below to skip this quiz module.
@@ -1845,7 +1847,7 @@ Be aware that there are &#39;&#39;out-of-pocket costs&#39;&#39; that are not bil
 *Study Abroad Administrative Fee: Covers mandatory international health insurance from Vanderbilt&#39;s provider.
 &lt;nowiki&gt;*&lt;/nowiki&gt; A very small number of study abroad programs have academic costs that exceed the cost of Vanderbilt tuition. Academic costs exceeding VU tuition are added to the Program Fee.&lt;&lt;/sidebar&gt;&gt;
 
-&lt;&lt;button [[Next|Fees, Cost, and Billing (2)]] &gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="StoryCaption" tags="special" position="2574.3333333333335,326" size="100,100">&lt;div id=&quot;advisors&quot;&gt;&lt;/div&gt;[[See all advisors|https://vanderbilt.edu/geo/advising/#staffadvisors]]
+&lt;&lt;button [[Next|Fees, Cost, and Billing (2)]] &gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="StoryCaption" tags="special" position="2574,326" size="100,100">&lt;div id=&quot;advisors&quot;&gt;&lt;/div&gt;[[See all advisors|https://vanderbilt.edu/geo/advising/#staffadvisors]]
 
 &lt;div id =&quot;ui-bar-print&quot;&gt;&lt;span class=&quot;print&quot;&gt;&lt;a href=&quot;javascript:window.print()&quot;&gt;&lt;img alt=&quot;print&quot; style=&quot;width:25px;height:25px&quot; src=&quot;https://s3.amazonaws.com/vu-wp0/wp-content/uploads/sites/234/2018/07/26132613/128x128.png&quot;&gt;&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;
 
@@ -1905,7 +1907,7 @@ Institutions abroad have their own schedules for reporting grades and producing 
 
 Some programs require you to say where they should send your transcript. Have it sent to the University Registrar at [[this address.|https://registrar.vanderbilt.edu/study-abroad/#Contact]]
 
-&lt;&lt;button[[Check Your Knowledge|Academic Policies Quiz 3a]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Show Advisors Widget" tags="widget" position="2576,40.666666666666664" size="100,100">/* Widget to display the sidebar with appropriate advisors and adjust the formatting of the rest of the page. Formatting:
+&lt;&lt;button[[Check Your Knowledge|Academic Policies Quiz 3a]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="18" name="Show Advisors Widget" tags="widget" position="2576,40" size="100,100">/* Widget to display the sidebar with appropriate advisors and adjust the formatting of the rest of the page. Formatting:
 
 	&lt;&lt;showadvisors&gt;&gt;
 	
@@ -1942,7 +1944,7 @@ Want to revisit this information? &lt;&lt;review &quot;na&quot; &quot;https://va
 Questions?&lt;&lt;link &quot; Contact your GEO advisor.&quot;&gt;&gt;&lt;&lt;showadvisors&gt;&gt;&lt;&lt;/link&gt;&gt;
 
 &lt;&lt;button[[Continue|SA Course Review]]&gt;&gt;&lt;&lt;/button&gt;&gt;&lt;&lt;/if&gt;&gt;
-&lt;&lt;set $Academic1 = &quot;complete&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Australia" tags="country south-pacific" position="1061.6666666666667,523" size="100,100">&lt;&lt;set $country to &quot;Australia&quot;&gt;&gt;&lt;&lt;sectionheader &quot;Australia&quot;&gt;&gt;
+&lt;&lt;set $Academic1 = &quot;complete&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="24" name="Australia" tags="country south-pacific" position="1061,523" size="100,100">&lt;&lt;set $country to &quot;Australia&quot;&gt;&gt;&lt;&lt;sectionheader &quot;Australia&quot;&gt;&gt;
 
 &lt;&lt;sidebar&gt;&gt;&lt;img class=&quot;sidebar-flag aniview&quot; data-av-animation=&quot;tada&quot; src=&quot;https://vugeo.github.io/regional/flags/au.png&quot;&gt;You’ve selected &#39;&#39;Australia&#39;&#39;. //If this is not where you&#39;ll be traveling, &lt;&lt;return &quot;go back&quot;&gt;&gt; and try again!//&lt;&lt;/sidebar&gt;&gt;
 
@@ -2719,7 +2721,7 @@ You’ll need to stay connected to Vanderbilt, at least a little bit! &#39;&#39;
 [[The Girl in the Moon Circle|https://www.goodreads.com/book/show/625288.The_Girl_in_the_Moon_Circle]], by Sia Figiel
 [[Voyage of Rediscovery: A Cultural Odyssey through Polynesia|https://www.goodreads.com/book/show/2736884-voyage-of-rediscovery]], by Ben Finney
 [[We Are the Ocean: Selected Works|https://www.goodreads.com/book/show/2702175-we-are-the-ocean]], by Epeli Hauʻofa
-[[The Orator|https://www.imdb.com/title/tt1846783/?ref_=nv_sr_1]] (first ever Samoan feature film, 2011)</tw-passagedata><tw-passagedata pid="123" name="End Portal" tags="" position="486.3333333333333,5614" size="100,100">&lt;&lt;sectionheader &quot;Portal&quot;&gt;&gt;
+[[The Orator|https://www.imdb.com/title/tt1846783/?ref_=nv_sr_1]] (first ever Samoan feature film, 2011)</tw-passagedata><tw-passagedata pid="123" name="End Portal" tags="" position="486,5614" size="100,100">&lt;&lt;sectionheader &quot;Portal&quot;&gt;&gt;
 
 Congratulations! You have now completed the online portion of your Regional Predeparture Orientation. Here&#39;s what you can do next:
 
@@ -2747,7 +2749,7 @@ Congratulations! You have now completed the online portion of your Regional Pred
 &lt;&lt;contents &quot;Staying Connected&quot;&gt;&gt;
 &lt;&lt;contents &quot;Recommended Readings &amp; Media&quot;&gt;&gt;
 
-&lt;&lt;button [[Return to Portal|End Portal]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="PassageFooter" tags="special" position="2456,316.6666666666667" size="100,100">&lt;div class=&quot;footer&quot;&gt;[[Regional Pre-Departure Orientation]] -- [[CYA Test]] -- [[Table of Contents]] -- &lt;&lt;link &quot;Enable Quiz Skipping&quot;&gt;&gt;&lt;&lt;set $Academic1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Academic2 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Academic3 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $FCB1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $HealthWell1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Security1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set _current = passage()&gt;&gt;&lt;&lt;goto _current&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="Action Item List Widget" tags="widget" position="2699,25" size="100,100">/* For use on the final &quot;Action Items&quot; page, listing all of the AIs.
+&lt;&lt;button [[Return to Portal|End Portal]]&gt;&gt;&lt;&lt;/button&gt;&gt;</tw-passagedata><tw-passagedata pid="125" name="PassageFooter" tags="special" position="2456,316" size="100,100">&lt;div class=&quot;footer&quot;&gt;[[Regional Pre-Departure Orientation]] -- [[CYA Test]] -- [[Table of Contents]] -- &lt;&lt;link &quot;Enable Quiz Skipping&quot;&gt;&gt;&lt;&lt;set $Academic1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Academic2 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Academic3 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $FCB1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $HealthWell1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set $Security1 = &quot;complete&quot;&gt;&gt;&lt;&lt;set _current = passage()&gt;&gt;&lt;&lt;goto _current&gt;&gt;&lt;&lt;/link&gt;&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="126" name="Action Item List Widget" tags="widget" position="2699,25" size="100,100">/* For use on the final &quot;Action Items&quot; page, listing all of the AIs.
 
 Use:
 
@@ -4127,7 +4129,10 @@ Please select your study abroad destination:
 
 &lt;div id=&quot;advs&quot;&gt;&lt;/div&gt;
 &lt;&lt;showadvisorsload&gt;&gt;
-</tw-passagedata><tw-passagedata pid="217" name="Splash Page" tags="splash" position="153,25" size="100,100">&lt;&lt;logoheader&gt;&gt;
+
+regCode: $regCode
+regCode2: $regCode2
+regCode3: $regCode3</tw-passagedata><tw-passagedata pid="217" name="Splash Page" tags="splash" position="153,25" size="100,100">&lt;&lt;logoheader&gt;&gt;
 
 &lt;div class=&quot;intro opened&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;&lt;div class=&quot;title&quot;&gt;&lt;h1&gt;Regional Pre-Departure 
@@ -4136,7 +4141,7 @@ Orientation&lt;/h1&gt;
 &lt;/div&gt;&lt;/div&gt;
 &lt;/div&gt;
 
-&lt;div id=&quot;photoCred&quot;&gt;Photo by Andrew Bainton&lt;/div&gt;</tw-passagedata><tw-passagedata pid="218" name="Bon Voyage" tags="" position="353.33333333333326,5614.166666666667" size="100,100">&lt;&lt;sectionheader &quot;Bon Voyage!&quot;&gt;&gt;
+&lt;div id=&quot;photoCred&quot;&gt;Photo by Andrew Bainton&lt;/div&gt;</tw-passagedata><tw-passagedata pid="218" name="Bon Voyage" tags="" position="353,5614" size="100,100">&lt;&lt;sectionheader &quot;Bon Voyage!&quot;&gt;&gt;
 
 !!!&quot;...no journey carries one far unless, as it extends into the world around us, it goes an equal distance into the world within.&quot; -- Lillian Smith
 

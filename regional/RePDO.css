@@ -45,6 +45,30 @@ Useful color inspector: https://html-color-codes.info/colors-from-image/
     visibility: visible;
 }
 
+#portalButton {
+    visibility: visible;
+}
+
+.portal {
+    background-color: lightgray;
+    position: fixed;
+    bottom: 10px;
+    right: 120px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 3px;
+    border-radius: 50%;
+    border: none !important;
+}
+
+.portal img {
+    border: none !important;
+    height: 25px !important;
+    width: 23px !important;
+    border-radius: 0% !important;
+}
+
 .advisor img {
     border: none !important;
     height: 25px !important;
@@ -125,7 +149,7 @@ body.splash h1 {
     line-height: 1.2em;
 }
 
-body.splash #bookmarks-bar, body.splash #ui-bar-tray, body.splash .print, body.splash .footer, body.splash #contactAdv {
+body.splash #bookmarks-bar, body.splash #ui-bar-tray, body.splash .print, body.splash .footer, body.splash #contactAdv, body.splash .portal {
     visibility: hidden;
 }
 
