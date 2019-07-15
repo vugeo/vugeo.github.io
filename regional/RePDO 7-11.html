@@ -130,6 +130,19 @@ Useful color inspector: https://html-color-codes.info/colors-from-image/
 
 */
 
+@media only screen and (max-width: 768px) {
+    img.action-intro-humaaan {
+        visibility: hidden;
+}
+    .speech-bubble:after {
+        visibility: hidden;
+    }
+    .speech-bubble {
+        width: 100% !important;
+        left: 0px !important;
+    }
+}
+
 .advisor {
     background-color: lightgray;
     position: fixed;
@@ -1399,7 +1412,6 @@ animation: none !important;
 
 
 
-
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">config.saves.autosave = true;
 config.saves.autoload = "prompt";
 Config.cleanupWikifierOutput = true;
@@ -2039,9 +2051,12 @@ NOTE: $regCode values should match region css class names assigned to advisors o
 */
 
 &lt;&lt;widget &quot;showadvisorsload&quot;&gt;&gt;&lt;&lt;silently&gt;&gt;
-	&lt;&lt;script&gt;&gt;			$(&#39;#advs&#39;).load(&quot;https://www.vanderbilt.edu/geo/advising/ .&quot; + State.variables.regCode);
+	&lt;&lt;script&gt;&gt;			$(&#39;#advs&#39;).load(&quot;https://www.spacetelescope.org/&quot;);
 	&lt;&lt;/script&gt;&gt;&lt;&lt;/silently&gt;&gt;
-&lt;&lt;/widget&gt;&gt;</tw-passagedata><tw-passagedata pid="31" name="Review Widget" tags="widget" position="2828,25" size="100,100">/* 
+&lt;&lt;/widget&gt;&gt;
+
+
+/* &quot;https://www.vanderbilt.edu/geo/advising/ .&quot; + State.variables.regCode */</tw-passagedata><tw-passagedata pid="31" name="Review Widget" tags="widget" position="2828,25" size="100,100">/* 
 
 Use like so: &lt;&lt;review &quot;Passage Name&quot; &quot;exteral link (optional)&quot;&gt;&gt; where Passage Name includes info to review.
 
