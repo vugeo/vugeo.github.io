@@ -1,5 +1,6 @@
 config.saves.autosave = true;
 config.saves.autoload = "prompt";
+Config.passages.nobr = false;
 Config.cleanupWikifierOutput = true;
 
 if (!window.GE) {
@@ -154,13 +155,13 @@ Macro.add("resources", {
 });
 
 /* Action Item Widget
-   Creates action item interface with buttons. This widget must be preceded by the <<actionbanner>> widget to show the banner (i.e., for a stand-alone action items page) 
+   Creates action item interface with buttons.
 
    Syntax:
     <<actionitem [variable name] [name of next passage]>>
         [Twine markup embodying the content of the action item]
     <</actionitem>> 
-	  
+		
     where the first argument is the corresponding variable found on the Action Item page, minus its "$action" prefix.
 	  */
 Macro.add("actionitem", {
@@ -170,29 +171,34 @@ Macro.add("actionitem", {
     {
         if (this.payload.length !== 0)
         {
-            // create the basic elements
-            var box = document.createElement("div"),
-	    	stack = document.createElement("div"),
-	   	banner = document.createElement("div");
-	    // set up the basic elements
-	    banner.className ="actionitem-banner sectionheader";
-	    banner.innerHTML = "Take Action";
-	    stack.className = "action-card-back";
-            box.className = "actionitem aniview fast";
-            box.setAttribute("data-av-animation", "dropIn");
+					// create the basic elements
+					var box = document.createElement("div"),
+							stack = document.createElement("div"),
+							container = document.createElement("div");
+
+	    		// set up the basic elements
+	    		stack.className = "action-card-back";
+					stack.setAttribute("aria-hide", "true");
+					box.className = "actionitem aniview fast";
+					box.setAttribute("data-av-animation", "dropIn");
+					container.className = "actionitem-container";
 					
-	    this.output.appendChild(banner);
+	    		//this.output.appendChild(banner);
+					var wikitext = '<<sectionheader "Action Item">>';
+					new Wikifier(this.output, wikitext);
             
             // process the payload
-            var wikitext = this.payload[0].contents.trim();
-	    wikitext += '<<action-buttons "' + this.args[0] + '" "' + this.args[1] + '">>';
+            wikitext = this.payload[0].contents.trim();
+	    			wikitext += '<<action-buttons "' + this.args[0] + '" "' + this.args[1] + '">>';
 					
-	    new Wikifier(box, wikitext);
-	    new Wikifier(stack, wikitext);
+	    			new Wikifier(box, wikitext);
+	    			new Wikifier(stack, wikitext);
+					
+						container.appendChild(stack);
+						container.appendChild(box);
 
-	    // append the action item div to the output buffer
-	    this.output.appendChild(stack);
-	    this.output.appendChild(box);
+	    			// append the action item div to the output buffer
+	    			this.output.appendChild(container);
         }
     }
 });
@@ -289,6 +295,21 @@ Macro.add("actionitem", {
 })(jQuery);
 
 }).call(window, window);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
